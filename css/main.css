@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 737px;
+  margin: 0 auto;
+}
+
+.wordp {
+  font-family: inter, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: rgb(45, 45, 45);
+  text-align: center;
+}
+
+.header {
+  padding-top: 58px;
+}
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 51px;
+}
+.header .container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 26px;
+}
+.header .container .navbar .serif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .container .navbar .serif p {
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(45, 45, 45);
+}
+.header .container .navbar .moon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 2px solid rgba(233, 233, 233, 0.63);
+  padding-left: 26px;
+  gap: 20px;
+}
+
+.search-section .container label input {
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(45, 45, 45);
+  padding: 19px 24px;
+  margin-bottom: 43px;
+  border-radius: 16px;
+  background-color: rgb(244, 244, 244);
+  outline: none;
+  border: none;
+}
+.search-section .container label input:focus {
+  border: 1px solid rgb(164, 69, 237);
+  cursor: pointer;
+}
+
+.main .container_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 39px;
+}
+.main .container_item div h2 {
+  font-weight: 700;
+  font-size: 64px;
+  color: rgb(45, 45, 45);
+}
+.main .container_item div p {
+  font-weight: 400;
+  font-size: 24px;
+  color: rgb(164, 69, 237);
+}
+.main .container_item img {
+  width: 75px;
+  height: 75px;
+}
+.main .container .noun {
+  font-family: lora, sans-serif;
+  margin-bottom: 39px;
+}
+.main .container .noun .word {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 38px;
+  gap: 23px;
+}
+.main .container .noun .word .line {
+  width: 100%;
+  border-top: 1px solid rgb(233, 233, 233);
+}
+.main .container .noun .meaning p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: rgb(117, 117, 117);
+  margin-bottom: 24px;
+}
+.main .container .noun .meaning .container ul {
+  margin-bottom: 63px;
+}
+.main .container .noun .meaning .container ul li {
+  padding: 0 25px;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(45, 45, 45);
+  margin-bottom: 13px;
+  list-style-image: url("./../img/dot.png") no-repeat 5px 5px;
+  list-style-position: inside;
+}
+.main .container .noun .meaning .container ul .keyboard {
+  list-style: none;
+  color: rgb(117, 117, 117);
+  padding-left: 45px;
+}
+.main .container .noun .synonyms p {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(117, 117, 117);
+}
+.main .container .noun .synonyms p span {
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(164, 69, 237);
+  padding-left: 24px;
+}
+.main .container .noun .synonyms p span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 21px;
+  margin-bottom: 123px;
+}
+.last P {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(117, 117, 117);
+  text-decoration: underline;
+}
+.last .imglink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.last .imglink a {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(45, 45, 45);
+}
+.last .imglink img {
+  padding-left: 8px;
+}
+
+@media (max-width: 713px) {
+  .container {
+    max-width: 327px;
+    margin: 0 auto;
+  }
+  .wordp {
+    font-size: 16px;
+  }
+  .header {
+    padding-top: 24px;
+  }
+  .header .container {
+    margin-bottom: 24px;
+  }
+  .header .container .navbar {
+    gap: 16px;
+  }
+  .header .container .navbar .serif {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .container .navbar .serif p {
+    font-size: 16px;
+  }
+  .header .container .navbar .moon {
+    padding-left: 16px;
+    gap: 12px;
+  }
+  .search-section .container label input {
+    font-size: 16px;
+    padding: 14px 24px;
+    margin-bottom: 23px;
+  }
+  .main .container_item {
+    margin-bottom: 31px;
+  }
+  .main .container_item div h2 {
+    font-size: 32px;
+  }
+  .main .container_item div p {
+    font-size: 18px;
+  }
+  .main .container_item img {
+    width: 48px;
+    height: 48px;
+  }
+  .main .container .noun {
+    font-family: lora, sans-serif;
+    margin-bottom: 32px;
+  }
+  .main .container .noun .word {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 31px;
+    gap: 19px;
+  }
+  .main .container .noun .meaning p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+  .main .container .noun .meaning .container ul {
+    margin-bottom: 24px;
+  }
+  .main .container .noun .meaning .container ul li {
+    font-size: 15px;
+  }
+  .main .container .noun .meaning .container ul .keyboard {
+    list-style: none;
+    color: rgb(117, 117, 117);
+    padding-left: 45px;
+  }
+  .main .container .noun .synonyms p {
+    font-size: 16px;
+  }
+  .main .container .noun .synonyms p span {
+    font-size: 16px;
+    padding-left: 26px;
+  }
+  .last {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    margin-bottom: 63px;
+  }
+  .last P {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(117, 117, 117);
+    text-decoration: underline;
+  }
+}
